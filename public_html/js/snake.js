@@ -123,6 +123,14 @@ function setFoodPosition(){
     food.y = randomY;
     } 
     
+    /*-------------------------------------------------------------------------
+     * Input Function
+     *-------------------------------------------------------------------------
+     */
     function keyboardHandler(event){
         console.log(event);
+        
+        if(event.keyCode == "39"){
+             snakeDirection = "right";
+        }
     }
